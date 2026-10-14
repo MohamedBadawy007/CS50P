@@ -12,11 +12,8 @@ I chose to build a command-line program, with the intention of developing it lat
 ## Architecture and Design Choices:
 * **Object-Oriented Programming (OOP):**
 In the main program, I have implemented Object-Oriented Programming concepts. I created two classes, one named `Item`, which represents each item shown for sale, and another for the `Cart` which represents a dynamic cart changing according to user inputs and needs.
-
 The `Item` class works as a blueprint for any item shown for sale, where each item should have a number (ID), name, type (which represents how it's sold), price, and quantity or amount whose default value is zero at the beginning.
-
 The `Cart` class manages the current items added or removed from the cart, as well as the total price to be paid. When printed, it shows each item added to the cart multiplied by the amount or quantity chosen by the user and its price.
-
 The algorithm behind showing current items in the cart and calculating the total price lies in creating a list of current objects inside the cart, where each object inside the list holds all properties (attributes) needed to represent it anywhere. The created list is the first place changed when changing any item inside the cart. We can use any value of the attributes assigned to the object to show its quantity or amount, calculate the price of each item and the total price by accumulating it in a single variable.
 
 I chose to implement classes rather than just dictionaries or lists for the whole program to be organised and versatile in properties of each item shown. Since all items shown are similar in properties (attributes), the best way to represent them is by creating a class for them.
