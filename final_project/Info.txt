@@ -1,0 +1,8 @@
+
+Project_Title: Virtual Grocery Market POS
+Name: Mohamed Mahmoud Badawy Abdelaziz Badawy
+GitHub_Username: MohamedBadawy007
+edX_Username: Mohamed_Badawy007
+City: Cairo
+Country: Egypt
+Date: October 12th, 2026
