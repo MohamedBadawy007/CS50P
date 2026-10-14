@@ -11,13 +11,13 @@ I chose to build a command-line program, with the intention of developing it lat
 
 ## Architecture and Design Choices:
 * **Object-Oriented Programming (OOP):**
-In the main program, I have implemented Object-Oriented Programming concepts. I created two classes, one named `Item`, which represents each item shown for sale, and another for the `Cart` which represents a dynamic cart changing according to user inputs and needs.
+In the main program, I have implemented Object-Oriented Programming concepts. I created two classes: one named `Item`, which represents each item shown for sale, and another named `Cart`, which represents a dynamic cart changing according to user inputs and needs.
 
-  The `Item` class works as a blueprint for any item shown for sale, where each item should have a number (ID), name, type (which represents how it's sold), price, and quantity or amount whose default value is zero at the beginning.
+  The `Item` class works as a blueprint for any item shown for sale, where each item should have a number (ID), name, type (which represents how it's sold), price, and quantity or amount, whose default value is zero at the beginning.
 
   The `Cart` class manages the current items added or removed from the cart, as well as the total price to be paid. When printed, it shows each item added to the cart multiplied by the amount or quantity chosen by the user and its price.
 
-  The algorithm behind showing current items in the cart and calculating the total price lies in creating a list of current objects inside the cart, where each object inside the list holds all properties (attributes) needed to represent it anywhere. The created list is the first place changed when changing any item inside the cart. We can use any value of the attributes assigned to the object to show its quantity or amount, calculate the price of each item and the total price by accumulating it in a single variable.
+  The algorithm behind showing current items in the cart and calculating the total price lies in creating a list of current objects inside the cart, where each object inside the list holds all properties (attributes) needed to represent it anywhere. The created list is the first place changed when changing any item inside the cart. We can use any value of the attributes assigned to the object to show its quantity or amount, calculate the price of each item, and the total price of all items by accumulating it in a single variable.
 
   I chose to implement classes rather than just dictionaries or lists for the whole program to be organised and versatile in properties of each item shown. Since all items shown are similar in properties (attributes), the best way to represent them is by creating a class for them.
 
@@ -31,7 +31,7 @@ In the main menu (features menu), there are several options (features) to choose
 
   If the user's input is invalid, the screen prompts them to try again with a clear, understandable error message.
 
-  Breaking the loop automatically to return after finishing a process and handling errors that arise from a user's invalid input provide a more user-friendly experience, which is an important aspect of the program.
+  Breaking the loop automatically to return after finishing a process and handling errors that arise from a user's invalid input provides a more user-friendly experience, which is an important aspect of the program.
 
 ## Testing with Pytest:
 I created a test file to test some of the root-level functions other than the `main` function.
@@ -41,7 +41,7 @@ I checked that the main menu (features menu) is printed correctly. Then, I teste
 ## How to Run:
 1. Run `pip install -r requirements.txt`
 2. Run `python project.py`
-3. Follow the on-screen menu prompts to add items to the cart and checkout.
+3. Follow the on-screen menu prompts to add items to the cart and check out.
 
 ## Generalization of the code:
 In the description, I have stated that the program helps the user with their shopping experience in any shop, not only a grocery market, and that's because of structuring the program using **Object-Oriented Programming (OOP)**.
